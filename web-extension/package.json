@@ -1,0 +1,14 @@
+{
+    "name": "web-extension",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build --emptyOutDir",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@types/chrome": "^0.0.261",
+        "typescript": "^5.3.3",
+        "vite": "^5.1.4"
+    }
+}
