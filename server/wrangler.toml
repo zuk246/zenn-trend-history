@@ -1,18 +1,13 @@
-name = "server"
+name = "zenn-trend-history"
 compatibility_date = "2023-12-01"
+node_compat = true
 
-# [vars]
-# MY_VARIABLE = "production_value"
+[[d1_databases]]
+binding = "DB"
+database_name = "zenn-trend-history"
+database_id = "7728c557-2945-41b2-92f4-b5ea14f46139"
+preview_database_id = "DB"
 
-# [[kv_namespaces]]
-# binding = "MY_KV_NAMESPACE"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-
-# [[r2_buckets]]
-# binding = "MY_BUCKET"
-# bucket_name = "my-bucket"
-
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "my-database"
-# database_id = ""
+# Cron Triggers - once a day
+[triggers]
+crons = ["0 0 * * *"]
