@@ -13,6 +13,11 @@ type FetchData = {
 };
 const API_URL = 'https://zenn-trend-history.zuk246.net';
 
+/*
+If use local server, use below.
+const API_URL = 'http://localhost:8787';
+*/
+
 export default function App() {
     const { data, isLoading, error } = useSWRImmutable<FetchData>(
         '/v1/random',
