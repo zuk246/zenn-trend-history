@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Zenn Trend History",
+    "description": "Zennでトレンドになったテック記事・アイデア記事・本の過去の履歴を表示する拡張機能",
+    "version": "1.0",
+    "icons": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "src/index.tsx",
+                "src/App.tsx",
+                "src/lib/Tooltip.tsx",
+                "src/lib/ArticleCard.tsx",
+                "src/utils/format.ts",
+                "src/types/db.d.ts"
+            ],
+            "matches": ["https://zenn.dev/*"]
+        }
+    ]
+}
